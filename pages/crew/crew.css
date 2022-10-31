@@ -1,0 +1,19 @@
+.person{
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    background-color: #d0d0d055;
+}
+
+.person:hover{
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    background-color: #d0d0d0dc;
+    cursor: pointer;
+
+}
+
+.person1, .person2, .person3, .person4{
+    background-color: white;
+}

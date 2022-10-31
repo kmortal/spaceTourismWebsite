@@ -1,0 +1,77 @@
+body{
+    background-image: url(../../assets/technology/background-technology-desktop.jpg);
+    background-repeat: no-repeat;
+}
+
+article{
+    margin: 0vh 10vw 0vh;
+    display: grid;
+    height: 70vh;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "navtitle navtitle img"
+    "nav header img"
+    "nav main img"
+    ;
+}
+
+article h3{
+    grid-area: navtitle;
+    font-size: 28px;
+}
+
+h3 strong{
+    color: #ffffff77;
+}
+
+img{
+    grid-area: img;
+    height: 80%;
+    justify-self: end;
+    align-self: center;
+    position: relative;
+    left: 10vw;
+}
+
+article nav ul{
+    grid-area: nav;
+    font-size: 1.12em;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+article nav ul li{
+    list-style-type: none;
+    width: 2em;
+    height: 2.12em;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid rgba(255, 255, 255, 0.288);
+    font-size: 2em;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+main header{
+    grid-area: header;
+}
+
+main header h1{
+    font-family: 'Bellefair', serif;
+    font-size: 32px;
+}
+
+main header h2{
+    font-size: 18px;
+    letter-spacing: 4.75px;
+    color: #ffffff77;
+}
+main p{
+    grid-area: main;
+    font-size: 16.7px;
+    padding-bottom: 3vh;
+}

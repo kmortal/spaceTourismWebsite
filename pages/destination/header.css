@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+
+body{
+    color: #fff;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16.7px;
+    letter-spacing: 2.7px;
+}
+
+#headerMain{
+    padding: 5vh 1vw;
+    display: flex;
+    align-items: center;
+}
+
+#navbarMainLine{
+    width: 35vw;
+    position: relative;
+    left: 3.5vw;
+    z-index: 1;
+}
+
+#navbarMain{
+    width: 50vw;
+    background-color: #d0d6f91a;
+    backdrop-filter: blur(6px);
+    padding: 2vh 2vw;
+    padding-right: 5vw;
+    position: relative;
+    left: 1.7vw;
+}
+
+#navbarMainList{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+    position: relative;
+    z-index: 0;
+}
+
+.navbarMainHref{
+    text-decoration: none;
+    color: #fff;
+}
+#Home{
+    position: relative;
+}
+
+#Home:hover::after{
+    content:'';
+    position: absolute;
+    background-color: #d0d6f96a;
+    width: 4em;
+    height: 0.25em;
+    top: 2.6em;
+    left: 0;
+}
+
+#Destination{
+    position: relative;
+}
+
+#Destination::after{
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    width: 8em;
+    height: 0.25em;
+    top: 2.65em;
+    left: 0;
+}
+
+#Crew{
+    position: relative;
+}
+
+#Crew:hover::after{
+    content: '';
+    position: absolute;
+    background-color: #d0d6f96a;
+    width: 4.5em;
+    height: 0.25em;
+    top: 2.65em;
+    left: 0;
+}
+
+#Technology{
+    position: relative;
+}
+
+#Technology:hover::after{
+    content: '';
+    position: absolute;
+    background-color: #d0d6f96a;
+    width: 7.5em;
+    height: 0.25em;
+    top: 2.65em;
+    left: 0;
+}

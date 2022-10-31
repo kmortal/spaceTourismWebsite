@@ -1,0 +1,99 @@
+#moon{
+    cursor: pointer;
+    position: relative;
+}
+
+.moon::after{
+    content:'';
+    position: absolute;
+    background-color: #fff;
+    width: 2.5em;
+    height: 0.2em;
+    top: 1.5em;
+    right: 0;
+}
+
+#moon:hover:after{
+    content:'';
+    position: absolute;
+    background-color: #d0d6f96a;
+    width: 2.5em;
+    height: 0.2em;
+    top: 1.5em;
+    right: 0;
+}
+
+#mars{
+    cursor: pointer;
+    position: relative;
+}
+
+.mars::after{
+    content:'';
+    position: absolute;
+    background-color: #fff;
+    width: 2.4em;
+    height: 0.2em;
+    top: 1.5em;
+    right: 0em;
+}
+
+#mars:hover:after{
+    content:'';
+    position: absolute;
+    background-color: #d0d6f96a;
+    width: 2.4em;
+    height: 0.2em;
+    top: 1.5em;
+    right: 0em;
+}
+
+#europa{
+    cursor: pointer;
+    position: relative;
+}
+
+.europa::after{
+    content:'';
+    position: absolute;
+    background-color: #fff;
+    width: 3.5em;
+    height: 0.2em;
+    top: 1.5em;
+    right: 0;
+}
+
+#europa:hover:after{
+    content:'';
+    position: absolute;
+    background-color: #d0d6f96a;
+    width: 3.5em;
+    height: 0.2em;
+    top: 1.5em;
+    right: 0;
+}
+
+#titan{
+    cursor: pointer;
+    position: relative;
+}
+
+.titan::after{
+    content:'';
+    position: absolute;
+    background-color: #fff;
+    width: 2.7em;
+    height: 0.2em;
+    top: 1.5em;
+    right: 0;
+}
+
+#titan:hover:after{
+    content:'';
+    position: absolute;
+    background-color: #d0d6f96a;
+    width: 2.7em;
+    height: 0.2em;
+    top: 1.5em;
+    right: 0;;
+}

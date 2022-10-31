@@ -1,0 +1,67 @@
+body{
+    background-image: url('../../assets/home/background-home-desktop.jpg');
+}
+
+#mainHome{
+    height: 20vh;
+    display: grid;
+    padding: 20vh 10vw 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header button"
+    "h1 button"
+    "p button"
+    ;
+}
+
+#mainHomeHeader{
+    font-size: 28px;
+    letter-spacing: 4.75px;
+    color: #d0d0d0;
+    grid-area: header;
+}
+
+#mainHomeH1{
+    grid-area: h1;
+    font-family: 'Bellefair', serif;
+    font-size: 150px;
+    margin: 1vh;
+}
+
+#mainHomeP{
+    grid-area: p;
+    margin: 0;
+}
+
+#mainHomeButton{
+    grid-area: button;
+    position: relative;
+    width: 9em;
+    height: 9em;
+    border-radius: 50%;
+    background-color: white;
+    align-self: end;
+    justify-self: end;
+    font-family: 'Bellefair', serif;
+    font-size: 22px;
+    color: #0b0d17;
+    text-align: center;
+}
+
+#mainHomeButton:hover::after{
+    content: '';
+    position: absolute;
+    background-color: #d0d0d01f;
+    width: 12.5em;
+    height: 12.5em;
+    border-radius: 50%;
+    right: -1.8em;
+    bottom: -1.7em;
+    z-index: -1;
+}
+
+button a{
+    text-decoration: none;
+    color: #000;
+}

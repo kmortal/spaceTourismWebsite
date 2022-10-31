@@ -1,0 +1,9 @@
+#tech1:hover, #tech2:hover, #tech3:hover{
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+.tech{
+    color: #0d0b17;
+    background-color: #fff;
+}

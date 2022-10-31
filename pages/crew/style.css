@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+
+body{
+    background-image: url('../../assets/crew/background-crew-desktop.jpg');
+    background-repeat: no-repeat;
+}
+
+article{
+    display: grid;
+    height: 74vh;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "navTitle img"
+    "main img"
+    "main img"
+    "nav img";
+    margin: 0vh 10vw;
+}
+
+article h3{
+    grid-area: navTitle;
+    font-size: 28px;
+    letter-spacing: 4.75px;
+    margin-bottom: 15vh;
+}
+
+h3 strong{
+    color: #d0d0d091;
+}
+
+main{
+    font-size: 16.7px;
+    grid-area: main;
+    margin-top: 3vh;
+}
+
+main h1{
+    font-family: 'Bellefair', serif;
+    font-size: 28px;
+    margin: 0;
+    color: #d0d0d091;
+}
+
+main h2{
+    font-family: 'Bellefair', serif;
+    margin: 0;
+    font-size: 32px;
+}
+img{
+    grid-area: img;
+    height: 105%;
+    justify-self: end;
+    align-self: end;
+    position: relative;
+    top: 2vh;
+}
+
+main > p{
+    font-size: 16.7px;
+}
+
+article section{
+    grid-area: nav;
+    margin: 10vh 0vw 0vh;
+    display: flex;
+    gap: 0vh 1vw;
+}

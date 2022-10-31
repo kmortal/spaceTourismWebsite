@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+
+body{
+    background-image: url('../../assets/destination/background-destination-desktop.jpg');
+    background-repeat: no-repeat;
+}
+
+article{
+    height: 10vh;
+    display: grid;
+    margin: 0 10vw 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "navTitle navTitle"
+    "img nav"    
+    "img title"
+    "img main"    
+    "img footer";
+}
+
+h3{
+    margin: 3vh 0vh 6vh;
+    grid-area: navTitle;
+    color: #fff;
+    font-size: 28px;
+    letter-spacing: 4.75px;
+}
+
+h3 strong{
+    margin: 0;
+    color: #ffffff55
+}
+
+img{
+    margin: 0;
+    width: 65%;
+    grid-area: img;
+    justify-self: center;
+}
+
+main > nav{
+    grid-area: nav;
+    margin: 0;
+}
+
+main header nav ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 2vw;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+
+}
+
+main header > h1{
+    grid-area: title;
+    font-size: 100px;
+    margin: 0;
+    padding: 1vh 0 3vh;
+    font-family: 'Bellefair', serif;
+}
+
+main > p{
+    grid-area: main;
+    margin: 0;
+    font-size: 16.7px;
+    padding-bottom: 3vh;
+}
+
+main hr{
+    margin: 0;
+}
+
+main > footer{
+    grid-area: footer;
+    display: flex;
+    gap: 0 10vw;
+    margin: 0;
+}
+
+main > footer h5 {
+    color: #d0d6f9;
+    font-size: 14px;
+    letter-spacing: 2.75;
+    margin: 5vh 0vw 2.5vh 0vh;
+}
+
+main > footer p {
+    margin: 0;
+    font-size: 28px;
+    font-family: 'Bellefair', serif;
+}
